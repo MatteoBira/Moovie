@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+
+	{{range .}}
+	<div class="movie-card">
+		<img class="movie-poster" src="https://image.tmdb.org/t/p/w185{{.ImgPath}}" alt="Movie Poster">
+		<h2>{{.Title}}</h2>
+		<p class="overview">{{.Overview}}</p>
+		<p>{{.Date}}</p>
+	</div>
+	{{end}}
+
+</body>
+
+</html>>
